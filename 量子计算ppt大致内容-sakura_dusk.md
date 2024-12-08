@@ -56,7 +56,7 @@ $|\psi\rangle=\alpha|0\rangle+\beta|1\rangle$
 
 现在我们知道一个混合态可以表示成 $|\psi\rangle=\alpha|0\rangle+\beta|1\rangle$，而 $\alpha,\beta$ 又是复数，那我们考虑想复数一样弄了个二维平面表示，给这个混合态也一个三维立体表示，于是就得到了布洛赫球。
 
-![image-20241208132936416](C:\Users\Sakura\AppData\Roaming\Typora\typora-user-images\image-20241208132936416.png)
+![img](https://i-blog.csdnimg.cn/blog_migrate/fe72ba781646b492b3521147e7f88834.png)
 
 那这样一个纯态的量子态就可以对应到球面上的一个点。
 
@@ -132,21 +132,25 @@ $H|1\rangle=\frac{1}{\sqrt{2}}|0\rangle-\frac{1}{\sqrt{2}}|1\rangle$
 
 在布洛赫球上三个维度的转角度：
 
-![image-20241208180248709](C:\Users\Sakura\AppData\Roaming\Typora\typora-user-images\image-20241208180248709.png)
+X任意角度旋转：
 
-![](C:\Users\Sakura\AppData\Roaming\Typora\typora-user-images\image-20241208180300425.png)
+$RX(\theta)=\begin{bmatrix}\cos\frac{\theta}{2}&-i\sin\frac{\theta}{2}\\-i\sin\frac{\theta}{2}&\cos\frac{\theta}{2}\end{bmatrix}$
 
-![image-20241208180314361](C:\Users\Sakura\AppData\Roaming\Typora\typora-user-images\image-20241208180314361.png)
+Y任意角度旋转：
+
+$RY(\theta)=\begin{bmatrix}\cos\frac{\theta}{2}&-\sin\frac{\theta}{2}\\\sin\frac{\theta}{2}&\cos\frac{\theta}{2}\end{bmatrix}$
+
+Z任意角度旋转：
+
+$RY(\theta)=\begin{bmatrix}e^{-i\theta/2}&0\\0&e^{i\theta/2}\end{bmatrix}$
 
 受控非门：（当第一个量子位为0时，不对第二量子位操作；否则，将第二量子位取非操作）
 
-![image-20241208180022508](C:\Users\Sakura\AppData\Roaming\Typora\typora-user-images\image-20241208180022508.png)
+$CNOT=\begin{bmatrix}1&0&0&0\\0&1&0&0\\0&0&0&1\\0&0&1&0\end{bmatrix}$
 
 TOFFOLI 门：如果前两个量子位都是 $|1⟩$ ，托福利门就会翻转第三个量子位。
 
-![image-20241208180408904](C:\Users\Sakura\AppData\Roaming\Typora\typora-user-images\image-20241208180408904.png)
-
-
+$\text{TOFFOLI}=\begin{bmatrix}1&0&0&0&0&0&0&0\\0&1&0&0&0&0&0&0\\0&0&1&0&0&0&0&0\\0&0&0&1&0&0&0&0\\0&0&0&0&1&0&0&0\\0&0&0&0&0&1&0&0\\0&0&0&0&0&0&0&1\\0&0&0&0&0&0&1&0\end{bmatrix}$
 
 ### 由输入输出构造量子门
 
