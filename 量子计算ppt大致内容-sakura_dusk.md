@@ -201,3 +201,15 @@ pyqpanda 是一个量子机器学习库，可以实现各种各样的量子计�
 为什么这样是允许的？
 
 因为每次落到 $1\sim n$ 的概率是 $\frac{n}{2^k}$，而我们有 $2^{k-1}<n\leqslant 2^k$，则根据简单的概率计算我们得到期望要生成的次数是 $\frac{2^k}{n}<2$，所以我们总能在较少的生成次数内得到符合条件的结果。
+
+
+
+一些推荐的网站：
+
+https://console.originqc.com.cn/
+
+可以去玩真机
+
+https://pyqpanda-toturial.readthedocs.io/zh/latest/index.html
+
+pyQPanda
